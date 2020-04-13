@@ -1,0 +1,348 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    background: #FFF;
+    color: #252525;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+h1, h2, h3, h4, h5 {
+    font-family: 'Noto Serif', serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+/**************** FIN GENERALES ****************/
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.hero {
+    background-image: url("../img/hero-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+
+    display: grid;
+    grid-template-rows: 60px auto;
+}
+
+.hero .header {
+    height: auto;
+    background: #FFF;
+
+    display: flex;
+    align-items: center;
+}
+
+.hero .header .container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.logo img {
+    max-width: 200px;
+}
+
+.hero .hero-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #FFF;
+    letter-spacing: -7px;
+    font-weight: 900;
+    font-size: 150px;
+    line-height: 120px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: rgba(0, 0, 0, 0.1) 1px -1px;
+}
+
+.hero-button {
+    padding: 15px 30px;
+    color: #FFF;
+    background: #f05e40;
+    border: none;
+    font-family: Poppins;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 20px 0px;
+    border-radius: 4px;
+    margin-top: 10%;
+}
+
+.hero-content p {
+    font-family: Poppins;
+    font-weight: 700;
+    color: #FFF;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-size: 14px;
+    margin-top: 3%;
+}
+
+.header .logo {
+    color: #252525;
+    display: flex;
+    align-items: center;
+}
+
+.header .navigation {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header .navigation a {
+    color: #252525;
+    padding: 10px;
+    font-family: Poppins;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/**************** FIN HERO ****************/
+
+.container .about {
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 80px;
+}
+
+.container .about h1 {
+    font-size: 35px;
+}
+
+.container .about h1::after{
+    content: "";
+    display: block;
+    margin: 15px auto;
+    background-color: #f05e40;
+    height: 2px;
+    width: 30px;
+}
+
+/**************** FIN ABOUT ****************/
+
+.container .services {
+    padding-bottom: 120px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 30px;
+}
+
+.services .service {
+    text-align: center;
+}
+
+.service i {
+    font-size: 64px;
+    color: #f05e40;
+    margin-bottom: 15px;
+}
+.service .service-header {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+/**************** FIN SERVICES ****************/
+
+.parallax {
+    background-image: url("../img/parallax.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 350px;
+}
+
+.parallax .container {
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    align-content: center;
+}
+
+.parallax .parallax-box {
+    text-align: center;
+    color: #FFF;
+}
+
+.parallax-header {
+    font-size: 60px;
+    font-weight: bold;
+    font-family: Helvetica, Arial;
+}
+
+/**************** FIN PARALLAX ****************/
+.our-work {
+    background: #f9f9f9;
+    padding: 120px 0;
+}
+
+.our-work .container {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 500px 1fr;
+    grid-template-rows: auto;
+}
+
+.our-work .work-title {
+    text-align: center;
+    padding-bottom: 50px;
+
+    grid-column: span 3;
+}
+
+.work-title h2 {
+    font-size: 35px;
+}
+
+.work-title h2::after{
+    content: "";
+    display: block;
+    margin: 15px auto;
+    background-color: #f05e40;
+    height: 2px;
+    width: 30px;
+}
+
+.work-box {
+    box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.2);
+    background: #FFF;
+    padding: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.work-content {
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.work-content p {
+    font-size: 14px;
+}
+
+.work-content span {
+    color: #f05e40;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.work-box.span2 {
+    grid-row: span 2;
+}
+
+/**************** FIN OUR WORK ****************/
+
+.pre-footer {
+    background: #f05e40;
+    padding: 60px 0;
+    color: #FFF;
+    text-align: center;
+    font-size: 35px;
+    line-height: 52px;
+    font-family: 'Noto Serif', serif;
+}
+
+.pre-footer p:last-child {
+    font-size: 14px;
+}
+
+/**************** FIN PRE FOOTER ****************/
+
+.footer .footer-box{
+    padding: 100px 0;
+}
+
+.footer .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 30px;
+}
+
+.footer h4 {
+    font-size: 22px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.footer-box img {
+    margin-bottom: 16px;
+}
+
+.footer .copyright {
+    border-top: 1px solid #f2f2f2;
+    padding: 10px 0;
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.footer .copyright .container {
+    display: block;
+}
+
+.footer .copyright span{
+    font-weight: bold;
+}
+
+.copyright i {
+    color: #f05e40;
+}
+.pulse {
+    animation:pulse 5s ease infinite;
+}
+
+@keyframes pulse {
+    0% {
+      transform:scale(1);
+    }
+    5% {
+      transform:scale(1.25);
+    }
+    20% {
+      transform:scale(1);
+    }
+    30% {
+      transform:scale(1);
+    }
+    35% {
+      transform:scale(1.25);
+    }
+    50% {
+      transform:scale(1);
+    }
+    55% {
+      transform:scale(1.25);
+    }
+    70% {
+      transform:scale(1);
+    }
+  }
